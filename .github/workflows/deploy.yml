@@ -16,7 +16,7 @@ jobs:
       - name: Set up SSH key
         run: |
           ssh-keyscan -t rsa github.com >> C:\Users\USER\.ssh\known_hosts
-          echo "Set up SSH key is complete"
+          echo "Set up SSH key is complete or not"
       - name: Deploy to server
         run: |
           echo "Starting deployment..."
