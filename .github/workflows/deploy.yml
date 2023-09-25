@@ -21,9 +21,11 @@ jobs:
         run: |
           echo "Starting deployment..."
           cd \Users\USER\
-          git clone git@github.com:isaranakavisute/vue-github-app.git vue-github-app2
-          cd vue-github-app2
+          git clone git@github.com:isaranakavisute/vue-github-app.git vue-github-app3
+          cd vue-github-app3
           git pull origin main
+          npm run build
+          npm run dev
           echo "Deployment completed or not"
 
           
